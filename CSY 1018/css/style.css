@@ -1,0 +1,201 @@
+/*Student Name: Suraj Basnet 
+UN id number :16418527*/
+
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Jim+Nightshade|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Jim+Nightshade|Noto+Serif|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+*{margin: 0px;
+padding: 0px;}
+
+
+.main{ 
+	
+	display: flex;  /*It display flex in heading of the page*/
+	flex-direction: column; /*elements are arranged in coloumn*/
+	margin:0px; 
+ }
+ body{
+	background-image: url(../images/image2.jpg); /*image is displayed as background*/
+	 background-size: cover; /*image is used as a cover background*/
+	 background-repeat: no-repeat;  /*background image won't be repeated*/
+}
+ .left{
+ 	
+ 	margin:0px;
+}
+.main img{ 	
+			height: 200px; /*given heigt is 200 pixel*/ 
+			width: 200px; /*given width is 200 pixel*/ 
+			margin: auto; /*margin is given auto*/
+			display:block;	/*the given image is displayed in block*/
+			border-radius: 100%;  /*radius border is given 100%*/
+			transition:  width 2s, height 2s, transform 3s; /*the image transition duration will be 3s increasing its width by 2s height by 2s */
+			box-shadow:4px 4px 4px 4px black;} /*it gives the shadow to the box*/
+ .span img:hover{ transform: rotate(360deg) scale(1.2, 1.2); } /*Hover is used for an image*/
+ 
+ header{background-color: grey; opacity: .8;} /*the header background color is given grey and where the opacity is given .8*/
+header nav {height: 10%; /*the height is given 10%*/
+			width: 20%; /*the width is given 20 %*/
+			border-radius: 10%;  /*the border of radius is given 10 %*/
+			transition:  width 2s, height 2s, transform 3s;  
+			box-shadow:4px 4px 4px 4px black; /*the shadow of box is given black */
+			display: flex;
+			flex-direction: row;
+			padding: 0px;
+			font-size: 15px;
+}
+
+header  ul{
+	display: flex; /*the unordered list of header is given flex*/
+	flex-direction: row; /*The list display in row */
+	justify-content:flex-end; 
+}
+header  ul li{ /*The list item of Header part*/
+	width: 10%; /*the width of list item of unordered list width is given 10%*/
+	justify-content:flex-end;
+	list-style: none;
+	margin: 5px; /*the margin is given 5px*/
+	transition-duration: 1s;
+
+}
+a{ color: yellow; /*it dispay the yellow  color.*/
+	text-decoration: none; /*text decoration is given none*/
+	transition:  width 5s, height 5s, transform 5s; /*the transition duration is for 5s increasing its width by 5s, height by 5s*/
+	font-size: 2em; /*the font size is given*/
+}
+
+header ul li:hover{
+						transform: scale(1.3,1.3); /*the list of un ordered list are being transform*/
+
+}
+header  ul li a:hover{color: red;} /*hover helps to trasforms the color into red*/
+
+
+p.nametext{
+	text-align:center; /*it keep the text into middle of the page*/
+	color:white; /*color is given white*/
+	font-size: 4em; /*font size is given 4em*/
+	margin-top: 50px; /*the given margin top is 50px*/
+    font-family: 'Lobster', cursive;  /*it is linked with the google fonts */
+	margin-bottom: 0px;  /*the margin of bottom is given 0px*/
+}
+p.text{
+	margin-top: 0px; /*the margin of top is given 0px*/
+	font-size:2em; /*the font size is given 2em*/
+	color:#800020; 
+	font-family: 'EB Garamond', serif; /*the font is linked with the google fonts*/
+	background-color: white; opacity: .8; /*the background color is given white with the opacity .8*/
+} 
+.rightside{
+	padding: 20px; /*the padding is given 20px*/
+}
+
+
+@media(max-width: 800px) /*to make the website responsive*/
+{
+	body{background-image: url(../images/image2.jpg);} /*the body background image is given*/
+header  ul{
+	display: flex; /*the un ordered list is displayed flex*/
+	flex-direction: column;  /*the given items will be shown in column*/
+	padding-left: 30%; /*padding is given 30% from left side*/
+	margin-bottom: 30px; /*the margin is given 30px from the buttom*/
+}.footer{ padding-left: 50px; } /*padding is given 50px in the footer from the left side*/
+p.text{padding-left: 10%;} /*padding is given 10% from the left side*/
+.rightside .baa{display: flex; flex-direction: column;} /*the contains of class name baa  display in flex and shown in column*/
+}
+.footer{  background-color: rgba(0, 150, 255, 1); }  /*here the footer background color is given*/
+.footer p{font-size: 2em; color: black; text-align: center;} /*the contains of the footer have the font size 2em and color black and the text align is center*/
+.footer2{display: flex;flex-direction: row; justify-content: center;} /*the contains of the footer is flex and it is displayed in row where the contains are shown in center*/
+.footer a{ 
+	padding-right: 30px; } /*here the padding is 30 px from right*/
+.footer img{
+	margin-top: 20px; /*the margin is 20px from the top*/
+	border-radius: 40%; /*the radius of the border is given 40%*/
+	height:52px; /*the height is given 52px*/
+	width:52px; /*the width of the image is given 52px*/
+}
+.footer{background-color: grey; opacity: .8;} /*the background color of the footer is given grey and the opacity is given .8*/
+
+/*Bio Css*/
+.biocontent h1 {
+	text-align:center; /*the text is shown in center*/
+	color:purple; /*the color is given purple*/
+	font-size: 2em; /*the font size is given 2em*/
+	margin-top: 50px; /*the margin from the top is given 50 px*/
+	font-family: 'Slabo 27px', serif; /*it links with the Google fonts*/
+	font-family: 'Jim Nightshade', cursive; /*it links with the Google fonts*/
+	font-family: 'Fjalla One', sans-serif; /*it links with the Google fonts*/
+	font-family: 'Anton', sans-serif; /*it links with the Google fonts*/
+	margin-bottom: 0px; /*the margin is given 0px from the bottom*/
+}
+.biocontent h1{background-color: white} /*hte background color of the class bio content is given white*/
+.biocontent h1:hover{transition:  width 5s, height 5s, transform 5s} /*the transition duration is 5s where the width transform by 5s height by 5s */
+.biocontent h1:hover{ transform: scale(1.3,1.3); color: red} /*it transforms the hover into red*/
+
+
+.information p{ text-align: center;  background-color: #ffffff; opacity: .6;} /*the text align is in center of the class information and background color is given where the opacity is given .6*/
+.information p{font-family: 'Slabo 27px', serif; /*it is linked with the google fonts*/
+font-family: 'Jim Nightshade', cursive; /*it links with the Google fonts*/
+font-family: 'Fjalla One', sans-serif; /*it links with the Google fonts*/
+font-family: 'Anton', sans-serif;  /*it links with the Google fonts*/
+font-family: 'Noto Serif', serif; font-size: 1.3em; color: black;}  /*it links with the Google fonts*/
+ 
+/*CV css*/
+.cvcontent{
+	
+	height:100px; /*the height is given 100 px*/
+	display: flex; /*the given contains of the cvcontent is displayed in flex*/
+	flex-direction: column; /*hte content will be display in column*/
+	margin:0px; /*the margin is given 0px*/
+	
+}
+p.tabletext{
+
+	align-content: center; /*the contents of the tabletext is shown in center*/
+	color:purple; /*the color is given purple*/
+	font-size: 2em;  /*the font size is given 2em*/
+	margin-top: 50px; /*the margin is given 50px from the top*/
+	font-family: 'Griffy', cursive; /*it links with the Google fonts*/
+	margin-bottom: 0px; /*the margin is 0px from the bottom*/
+	}
+
+.leftside{ 
+	align-content: center; /*the contents from the class left side are displayed in center*/
+	 color:brown; /*the color is given brown */
+	  font-style: oblique; /*the font style is given oblique*/
+	  font-family: 'Slabo 27px', serif; /*it links with the Google fonts*/
+
+}
+
+
+.rightside p{
+	font-size: 2.5em; /*the font size of the class right side is given 2.5em*/
+}
+.rightside ul li{
+	font-size: 1.2em; /*the font size is given 1.2em*/
+	color: white; /*the color is given white for the content of the class rightside*/
+}
+.baa{display: flex; flex-direction:row; /*the content from the class baa is displayed flex and displayed in row*/
+padding: 10px; /*padding is given 10px*/
+}
+.baa{background-color: #ffffff; opacity: .8;} /*the background color is given and opacity is given .8*/
+.BCC{ margin-left: 10px; } /*the margin is given 10ox from the left*/
+.BCC ul li {color: blue} /*the color is given blue*/
+.HSS{ margin-left: 10px; } /*the margin is given 10ox from the left*/
+.HSS ul li {color: blue} /*the color is given blue */
+.SSS{ margin-left: 10px; }  /*the margin is given 10px from the left*/
+.SSS ul li {color: blue} /*the color is given blue*/
+
+ul{list-style-type: none;} /*listtype is given none*/
+
+
+/*Css of Contact page*/
+.form{padding-left: 10%; /*padding is given 10% from left*/
+	padding-right: 50%} /*padding is given 50 % from right*/
+.form{background-color: #ffffff; opacity: .8;} /*background color is given and opacity is given .8*/
+
